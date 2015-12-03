@@ -1,67 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="멀티미디어공학과 게시판"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    android:orientation="vertical"
+     >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="219dp"
+        android:background="@drawable/alrim"
         android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="59dp"
-            android:layout_marginTop="32dp"
-            android:gravity="center"
-            android:text="공지사항" />
+       
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/button1"
-            android:layout_alignBottom="@+id/button1"
-            android:layout_marginLeft="21dp"
-            android:layout_toRightOf="@+id/button1"
-            android:gravity="center"
-            android:text=" 일정 " />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.61"
+        android:orientation="vertical">
+
+      <ImageButton
+          android:id="@+id/btn_sahang"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_toLeftOf="@+id/btn_ill"
+          android:background="#FFFFFF"
+          android:onClick="onClick"
+          android:orientation="vertical"
+          android:padding="10dp"
+          android:src="@drawable/sahang" />
+
+      <ImageButton
+          android:id="@+id/btn_ill"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:background="#FFFFFF"
+          android:onClick="onClick"
+          android:orientation="vertical"
+          android:padding="10dp"
+          android:src="@drawable/ill" />
+      
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="1번째 공지사항" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="118dp"
+        <ImageButton
+            android:id="@+id/btn_text"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/textView2"
-            android:layout_marginTop="15dp"
-            android:text="2번째 공지사항" />
+            android:layout_centerVertical="true"
+            android:background="#FFFFFF"
+            android:onClick="onClick"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:src="@drawable/text" />
       
     </RelativeLayout>
 
 </LinearLayout>
+
